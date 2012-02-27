@@ -1,0 +1,19 @@
+<div class="container">
+<h1>Videos requested so far</h1>
+
+
+<div style =" margin-top: 60px; width:300px; padding: 20px; background: rgba(0,0,0, .7)">
+<%= link_to 'New Video Request', new_plot_path , {:style=>'color:red; font-size:2em'}%></div>	<br />
+
+
+
+
+<% @plots.each do |plot| %>
+    <li><%=link_to  image_tag("http://img.youtube.com/vi/#{plot.timepoint.split(' ')[2].split("#")[0].to_s}/1.jpg"), :homepage %></li>
+<br />
+<% end %>
+
+</div>
+
+ 
+

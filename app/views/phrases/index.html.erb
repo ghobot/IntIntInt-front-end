@@ -1,0 +1,24 @@
+<h1>Listing phrases</h1>
+<%= paginate @phrases %> 
+
+<table>
+  <tr>
+    <th>Content</th>
+    <th>Video</th>
+    <th>Youtubeid</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @phrases.each do |phrase| %>
+  <tr>
+    <td><%= phrase.content %></td>
+    <td><%= phrase.video_id %></td>
+    <td><%= phrase.youtubeid %></td>
+    <td><%= phrase.id %></td>
+
+
+  </tr>
+<% end %>
+</table>

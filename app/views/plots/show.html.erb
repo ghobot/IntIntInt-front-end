@@ -1,0 +1,18 @@
+<% if flash[:notice] %>
+     <p class="notice"><%= flash[:notice] %></p>
+<% else %>
+<p id="notice"><%= notice %></p>
+<% end %>
+
+
+
+<div class="container">
+      <div id="ytPlayerInfo" class="fade-in one"></div>
+      <div id="plot-form">
+          <input class="hidden" value=<%= @plot.id %> id="plots">
+          <div id="pullr_status"></div>            
+      </div>
+    
+</div>
+<div id="video_grid" class="row"></div>
+

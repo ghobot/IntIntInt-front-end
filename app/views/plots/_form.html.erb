@@ -1,0 +1,42 @@
+<%= bootstrap_form_for(@plot,  :html => { :class => "form-search"}) do |f| %>
+  <% if @plot.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@plot.errors.count, "error") %> prohibited this plot from being saved:</h2>
+
+      <ul>
+      <% @plot.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+
+
+
+
+<!-- Grid system
+================================================== -->
+<section id="grid-system">
+ 	<div class="row">
+		<div class="span12">
+			</div>
+			
+			<div class="span12">
+		      <form class="form-search">
+		    <%= f.text_field :name, :class => "input-xxlarge search-query"  %>
+		    <%= f.button 'pULLit', :class => "btn"  %>
+		
+		<% end %>
+ 	  </form>
+    </div>
+  </div> <!-- /row -->
+
+  <div class="row">
+    <div class="span4">
+      <h2>Enter a sentence and press <strong>pUllit</strong>.</h2>
+
+    </div>
+
+  </section> 
+  

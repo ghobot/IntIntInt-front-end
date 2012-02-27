@@ -1,0 +1,50 @@
+	<!DOCTYPE html>
+	<html lang="en">
+	  <head>
+	    <meta charset="utf-8">
+	    <title>pULLR</title>
+	    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	    <meta name="description" content="">
+	    <meta name="author" content="">
+
+	<%= stylesheet_link_tag  "bootstrap", "docs.css", "bootstrap-responsive.css", "style" %>
+
+	<%= javascript_include_tag "application" , "pullr_v5" %>
+	<%= csrf_meta_tags %>
+
+	    <!-- Le fav and touch icons -->
+	    <link rel="shortcut icon" href="assets/ico/favicon.ico">
+	    <link rel="apple-touch-icon" href="assets/ico/apple-touch-icon.png">
+	    <link rel="apple-touch-icon" sizes="72x72" href="assets/ico/apple-touch-icon-72x72.png">
+	    <link rel="apple-touch-icon" sizes="114x114" href="assets/ico/apple-touch-icon-114x114.png">
+
+	</head>
+<body>
+	 <div class="navbar navbar-fixed-top"> <!-- navbar -->
+      <div class="navbar-inner">
+        <div class="container">
+          <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="i-bar"></span>
+            <span class="i-bar"></span>
+            <span class="i-bar"></span>
+          </a>
+          <a href="#"><h1 class="brand-new">Intel Vibrant Grant 2012</h1></a>
+          <div class="nav-collapse">
+            <ul class="nav">
+              <li class=""><%= link_to "Home" , :homepage %></li>
+              <li><%= link_to "About" , :about %></li>
+              <li><%= link_to "Contact" , :contact %></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+  	</div> <!-- end of navbar -->
+			<%= yield %>	    	
+   	<footer>
+	    <h1>pullr</h1>
+	     <p>project ullr 2012</p><p>Code licensed under the <a href="http://www.apache.org/licenses/LICENSE-2.0" target="_blank">Apache License v2.0</a>. Documentation licensed under <a href="http://creativecommons.org/licenses/by/3.0/">CC BY 3.0</a></p>          
+    </footer>
+	</div>
+</body>
+</html>
+
