@@ -10,7 +10,7 @@ YApp::Application.routes.draw do
    
    match 'eval' => 'phrases/1/edit', :as => :eval
    match 'about' => 'words#index' , :as => :about
-   match 'contact' => 'metawords#index' , :as => :contact
+   match 'contact' => 'keywords#index' , :as => :contact
    
   resources :judges
 

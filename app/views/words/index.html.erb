@@ -4,18 +4,32 @@
 <div class="row">
 
     <div class="span8 top-padding left-padding">
-          <iframe  src="http://player.vimeo.com/video/37262220" width="640" height="360" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen> 
+          <iframe  id="vimeo" class="float-l" src="http://player.vimeo.com/video/37262220" width="480" height="240" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen> 
           </iframe>
+         
       <!--Body content-->
     </div>
+     <!-- <div id="" class=""><a id="vimeoExample" style= "position: relative; margin:35%;" href="" class="">How was this movie made?</a>
+          </div> -->
     <div  id="about-description"class="span8 left-padding">
       <span>
-        <h5>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-        proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</h5>
+       <h4> How does project ULLr work?</h4>
+<br />
+<h5>The input sentence is analyzed against a sentiment corpus and assigned a specific sentiment value.</h5>
+
+<h5>Each word is split from the input sentence and matched to video tags on Youtube.com</h5>
+
+<h5>Each matching video is analyzed for comments that contain a human placed time point.</h5>
+<br />
+<h5>Comment Example:<strong><em> 3:29 is the most﻿ funny xD chykarito 1 month ago</em></strong></h5>
+<br />
+<h5>Each time point that contains a sentence is analyzed against a sentiment corpus and the assigned sentiment value is matched to the sentiment value of the original sentence.</h5>
+
+<h5>If matched, 4 seconds of that time point are extracted for the specific word in the original query.</h5>
+
+<h5>This process is repeated for each of remaining words from the original sentence.</h5>
+
+<h5>The video is assembled from each word from the input sentence and plays in realtime.</h5>
       </span>
     </div>
   </div>

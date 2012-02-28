@@ -1,13 +1,15 @@
+
+
 <% if flash[:notice] %>
-     <p class="notice"><%= flash[:notice] %></p>
+     <p class="notice" class="top-padding"><%= flash[:notice] %></p>
 <% else %>
 <p id="notice"><%= notice %></p>
 <% end %>
 
-
-
 <div class="container">
-      <div id="ytPlayerInfo" class="fade-in one"></div>
+      <div id="ytPlayerInfo" class="fade-in one">
+      <h2> <%= @plot.name %> </h2>	
+      </div>
       <div id="plot-form">
           <input class="hidden" value=<%= @plot.id %> id="plots">
           <div id="pullr_status"></div>            

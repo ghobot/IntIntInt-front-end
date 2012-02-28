@@ -192,6 +192,15 @@ z-index: 993;
 
 }
 
+.ytVideo1{
+	
+	position: absolute;
+	margin: 10px 0 0 35px;
+	padding: 0 0 0 0; 
+	border-radius: 20px !important;
+
+}
+
 #video_grid {
 	position: absolute;
 	margin: 20px 0 0 10%;
@@ -398,6 +407,7 @@ margin:  0 0 0 20px;
 }
 
 #pullr_message {
+margin: 3% 0 0 40%;
 font-size: 1.5em;
 height : 1.5em;
 padding: 3px;
@@ -423,10 +433,10 @@ float: left;
 
 footer {
         margin: 0px 0px 0px 0px;
-        padding: 15px;
+   
 		/* border-top: 1px solid #EEE;*/        
         background-color: rgba(0, 0, 0, .7);
-        height: 3.5em;
+        height: 4em;
         position: fixed;
         bottom: 0;
         right: 0;
@@ -539,18 +549,19 @@ height: 100%;
 
 .bio{
 float: left;
-padding: 15px 0 0 0;
+padding: 15px 0 10px 0;
 
 }
 
 .bio img{
 float: left;
+padding: 0 15px 0 0;
 
 } 
 
 .bio p{
 color: #eee;
-padding:5px;
+padding-left:5px;
 
 }
 
@@ -563,3 +574,29 @@ margin: 15px 0px 0px 0px;
 #about-description {
 	margin: 10px 10% 0 5%;
 }
+
+#loadscreenMessage {
+
+text-align: center;
+margin: 50% 0  0 100%; 
+
+}
+#loadscreenMessage {
+position: relative;
+margin: 10%;
+
+}
+
+.float-l {
+
+	float: left;
+
+}
+
+footer img {
+	float:right;
+	padding: 0 10px 0 0 ;
+	width: 8%;
+	overflow: visible;
+}
+

@@ -1,25 +1,16 @@
-<h1>Listing keywords</h1>
+<div class="container-fluid top-padding">  
+  
+    <div id="stepan" class="bio grey rounded span9">
+      <img src="http://itp.nyu.edu/image.php?width=125&height=125&cropratio=1:1&image=/people_pics/itppics/sb3367.jpg"><p><h4><a href="http://www.noletterword.com"> NoletterWord </a></h4> <h4><a href="http://www.noletterword.com/blog"> Blog </a></h4></p>
+    </div>
 
-<table>
-  <tr>
-    <th>Content</th>
-    <th>Video</th>
-    <th></th>
-    <th></th>
-    <th></th>
-  </tr>
+   <div id="greg" class="bio grey rounded span9">
+      <img src="http://itp.nyu.edu/image.php?width=125&height=125&cropratio=1:1&image=/people_pics/itppics/dorsag01.jpg"><p>Greg Dorsainville has a background in biomedical research science and is currently exploring ways to use media to teach a wider audience complicated science ideas. </p><h4><a href="https://twitter.com/#!/ScienceLifeNY">twitter</a></h4><h4><a href="http://www.linkedin.com/pub/greg-dorsainville/10/131/249">linkedin</a></h4><h4><a href="https://vimeo.com/sciencelife">vimeo</a></h4>
+    </div>
 
-<% @keywords.each do |keyword| %>
-  <tr>
-    <td><%= keyword.content %></td>
-    <td><%= keyword.video_id %></td>
-    <td><%= link_to 'Show', keyword %></td>
-    <td><%= link_to 'Edit', edit_keyword_path(keyword) %></td>
-    <td><%= link_to 'Destroy', keyword, confirm: 'Are you sure?', method: :delete %></td>
-  </tr>
-<% end %>
-</table>
+    <div id="alex" class="bio grey rounded span9">
+      <img src="http://itp.nyu.edu/image.php?width=125&height=125&cropratio=1:1&image=/people_pics/flash/kozovski_a_299879.jpg"><p>Alexander Kozovski has a background in video, and is currently interested in the interaction between synthetic biology and technology.
+<h4><a href="http://www.akozovski.com">www.akozovski.com</a></h4></p> 
+    </div>
 
-<br />
-
-<%= link_to 'New Keyword', new_keyword_path %>
+</div>

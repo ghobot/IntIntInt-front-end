@@ -9,7 +9,7 @@
 
 	<%= stylesheet_link_tag  "bootstrap", "docs.css", "bootstrap-responsive.css", "style" %>
 
-	<%= javascript_include_tag "application" , "pullr_v5" %>
+	<%= javascript_include_tag "application" %>
 	<%= csrf_meta_tags %>
 
 	    <!-- Le fav and touch icons -->
@@ -28,7 +28,7 @@
             <span class="i-bar"></span>
             <span class="i-bar"></span>
           </a>
-          <a href="#"><h1 class="brand-new">Intel Vibrant Grant 2012</h1></a>
+          <h1 class="brand-new">Intel Vibrant Grant 2012</h1>
           <div class="nav-collapse">
             <ul class="nav">
               <li class=""><%= link_to "Home" , :homepage %></li>
@@ -41,8 +41,9 @@
   	</div> <!-- end of navbar -->
 			<%= yield %>	    	
    	<footer>
-	    <h1>pullr</h1>
-	     <p>project ullr 2012</p><p>Code licensed under the <a href="http://www.apache.org/licenses/LICENSE-2.0" target="_blank">Apache License v2.0</a>. Documentation licensed under <a href="http://creativecommons.org/licenses/by/3.0/">CC BY 3.0</a></p>          
+	    <!-- <h1>pullr</h1> -->
+	    <%= image_tag('logo.png') %>
+	     <p>Code licensed under the <a href="http://www.apache.org/licenses/LICENSE-2.0" target="_blank">Apache License v2.0</a>. Documentation licensed under <a href="http://creativecommons.org/licenses/by/3.0/">CC BY 3.0</a></p>          
     </footer>
 	</div>
 </body>
